@@ -26,4 +26,4 @@ jobs:
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}  # Pulls Vercel token from GitHub secrets
         run: |
-          npx vercel --token $VERCEL_TOKEN --prod  # Deploy the app to Vercel in production mode using npx
+          npx vercel --token $VERCEL_TOKEN --prod --yes # Deploy the app to Vercel in production mode using npx
