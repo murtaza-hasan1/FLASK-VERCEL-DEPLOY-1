@@ -25,6 +25,5 @@ jobs:
       - name: Deploy to Vercel
         env:
           VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}  # Pulls Vercel token from GitHub secrets
-          VERCEL_PROJECT_NAME: "flask-app-deployment"  # Make sure this matches your Vercel project name
         run: |
-          npx vercel --token $VERCEL_TOKEN --prod --yes --confirm --scope=murtaza1 --project=$VERCEL_PROJECT_NAME
+          npx vercel --token $VERCEL_TOKEN --prod --yes --confirm --scope=murtaza1
